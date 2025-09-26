@@ -1,0 +1,43 @@
+Objective: Implement a deep Multi-Layer Perceptron (MLP) to classify points from the make_moons dataset without using frameworks initially, then extend to TensorFlow with mini-batches.
+
+Dataset: make_moons (2 features, binary labels).
+
+Network Architecture: Deep MLP with layers_dims = [2, 10,10,10,10,10,10,10,10,1]
+
+Hidden layers: ReLU activation
+
+Output layer: Sigmoid activation
+
+Parameter Initialization:
+
+Weights initialized with He initialization
+
+Biases initialized to zeros
+
+Forward Propagation:
+
+Linear + activation at each layer
+
+Store caches (A_prev, W, b, Z) for backprop
+
+Loss Function: Binary cross-entropy
+
+Backpropagation:
+
+Compute gradients of cost w.r.t weights and biases
+
+Use caches to calculate efficiently
+
+Parameter Update: Gradient descent on all layers
+
+Training: Loop over epochs; track cost to monitor learning
+
+Future Extension: Implement mini-batch training with TensorFlow for efficiency and GPU acceleration.
+
+Key Takeaways:
+
+Caching intermediate values is crucial for backprop
+
+Proper weight initialization prevents vanishing/exploding gradients
+
+Deep MLP can be easily extended by changing layers_dims
